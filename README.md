@@ -1,12 +1,11 @@
 # YuvLib
 
 #将对应cpu架构的 so库拷贝到jniLibs 中，并将YuvUtil.java 文件 放到包名为com.xubaipei.yuv目录下
-package com.xubaipei.yuv;
 
 /**
  * Created by xubp on 2018/8/23.
  */
-
+用法如下
 public class YuvUtil {
     static {
         System.loadLibrary("yuv_jni");
