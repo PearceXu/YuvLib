@@ -8,7 +8,6 @@ public class YuvUtil {
     static {
         System.loadLibrary("yuv_jni");
     }
-
     /**
      *
      * @param width 宽度

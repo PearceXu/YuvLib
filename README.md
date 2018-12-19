@@ -1,4 +1,15 @@
-# YuvLib
+# YuvLib 集成
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+
+		dependencies {
+    	        implementation 'com.github.PearceXu:YuvLib:1.0.0'
+    	}
+
 
 #将对应cpu架构的 so库拷贝到jniLibs 中，并将YuvUtil.java 文件 放到包名为com.xubaipei.yuv目录下
 #用法如下：
