@@ -1,4 +1,5 @@
 # YuvLib 集成
+```gradle
 	allprojects {
 		repositories {
 			...
@@ -9,10 +10,11 @@
 		dependencies {
     	        implementation 'com.github.PearceXu:YuvLib:1.0.0'
     	}
-
+```
 
 #将对应cpu架构的 so库拷贝到jniLibs 中，并将YuvUtil.java 文件 放到包名为com.xubaipei.yuv目录下
 #用法如下：
+```java
 /**
  * Created by xubp on 2018/8/23.
  */
@@ -52,3 +54,4 @@ public class YuvUtil {
     public static native void Nv21_Nv12(int width,int height,byte[] input,byte[] output);
 
 }
+```
